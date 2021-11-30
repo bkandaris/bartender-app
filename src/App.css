@@ -84,7 +84,7 @@ input {
 /* individual cocktails */
 .cocktail-wrapper {
   display: flex;
-  margin: 4px;
+  margin: 25px 4px;
   max-width: 200px;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,6 @@ input {
 
 .individual-cocktail > img {
   max-height: 150px;
-  margin: 10px 0 10px 0;
 }
 
 .individual-cocktail > h4 {
@@ -121,6 +120,7 @@ input {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border: 1px solid black;
 }
 
 .cocktail-button:hover {
@@ -137,4 +137,78 @@ input {
   flex-wrap: wrap;
   max-width: 95%;
   margin: 0 auto;
+}
+
+.single-cocktail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-cocktail-wrapper > h2 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.single-cocktail-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-cocktail-image {
+  max-height: auto;
+  max-width: 350px;
+}
+
+.single-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.single-info-wrapper > p {
+  background: white;
+  margin: 10px 0;
+}
+
+.single-span {
+  background-color: lightgreen;
+  padding: 4px 0;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.none-found {
+  margin: 50px auto;
+  font-size: 1.5rem;
+  background-color: yellow;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+}
+
+/* About Page */
+
+.about-wrapper {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.about-wrapper > h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px;
+}
+
+.about-wrapper > p {
+  font-size: 1.3rem;
+}
+
+.about-wrapper > img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
 }

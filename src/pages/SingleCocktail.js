@@ -71,20 +71,34 @@ const SingleCocktail = () => {
   const { name, image, category, info, glass, instructions, ingredients } =
     cocktail;
   return (
-    <div>
+    <div className='single-cocktail-wrapper'>
       <h2>{name}</h2>
-      <div>
-        <img src={image} alt={name} />
-        <div>
-          <p>Name: {name}</p>
-          <p>Category: {category}</p>
-          <p>Info: {info}</p>
-          <p>Glass: {glass}</p>
-          <p>Instructions: {instructions}</p>
+      <div className='single-cocktail-image-wrapper'>
+        <img className='single-cocktail-image' src={image} alt={name} />
+        <div className='single-info-wrapper'>
           <p>
-            Ingredients:
+            <span className='single-span'>Category: </span>
+            <br />
+            {category}
+          </p>
+          <p>
+            <span className='single-span'>Info: </span> <br />
+            {info}
+          </p>
+          <p>
+            <span className='single-span'>Glass: </span>
+            <br />
+            {glass}
+          </p>
+          <p>
+            <span className='single-span'>Instructions: </span>
+            <br />
+            {instructions}
+          </p>
+          <p>
+            <span className='single-span'>Ingredients:</span>
             {ingredients.map((ing, index) => {
-              return ing ? <p key={index}>{ing},</p> : null;
+              return ing ? <p key={index}>{ing}</p> : null;
             })}
           </p>
         </div>
