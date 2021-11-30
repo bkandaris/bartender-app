@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* nav */
+nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlogo {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navlogo:hover {
+  color: lightgreen;
+  transition: 0.4s;
+}
+
+ul {
+  display: flex;
+  margin: 5%;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navlink {
+  color: white;
+  margin-right: 25px;
+}
+
+.navlink:hover {
+  color: lightgreen;
+  transition: 0.4s;
+}
+
+form {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 240px;
+  height: 100px;
+  margin: 30px auto 0 auto;
+  background-color: black;
+  box-shadow: 5px 10px #ccc9c9;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.header-wrapper {
+  margin-top: 10px;
+  text-align: center;
+  width: 90%;
+  margin: 10px auto 0 auto;
+}
+
+.header-wrapper > h3 {
+  font-style: italic;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 1.1rem;
+}
+/* individual cocktails */
+.cocktail-wrapper {
+  display: flex;
+  margin: 4px;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.individual-cocktail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+
+.individual-cocktail > img {
+  max-height: 150px;
+  margin: 10px 0 10px 0;
+}
+
+.individual-cocktail > h4 {
+  font-weight: 500;
+}
+
+.individual-cocktail > p {
+  font-style: italic;
+}
+
+.cocktail-button {
+  margin: 5px 0 5px 0;
+  font-size: 0.8rem;
+  padding: 5px;
+  background: black;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.cocktail-button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: 499;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cocktail List */
+
+.cocktail-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: 0 auto;
 }
